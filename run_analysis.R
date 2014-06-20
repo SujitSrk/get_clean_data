@@ -1,4 +1,5 @@
-# This function runs analysis on the data
+# This function runs analysis on the raw samsung data and produdes a tidy output based 
+# on transformations described in the README file.
 
 run_analysis <- function () {
   
@@ -65,7 +66,7 @@ run_analysis <- function () {
   colnames(mergeActivity) <- c("activityID")
   
   # Step c: Join (merge )  activitySet and activityNames on activityID to descriptive labels for activities
-  activitySet <- merge (mergeActivity, activityNames)
+  activitySet <- merge (mergeActivity, activityNames, by="activityID")
    
   # Step d: Now add this activity name set as a newcolumn to the main merged Dataset with the mean/std x values extracted
   # (column 2 in the activitySet table above  as column 1 is ID) 
