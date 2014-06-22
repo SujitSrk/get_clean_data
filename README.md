@@ -1,4 +1,4 @@
-#Read me for run_analysis.txt
+#Read me for run_analysis.R
 
 This script operates on the raw Samsung Human Activity Recognition Using Smartphones Dataset and provides a subset of  data merged from various files in the dataset. This subset can then be used further downstream analysis.
 
