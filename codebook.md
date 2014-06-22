@@ -40,7 +40,7 @@ The transformation from the raw data set to the tidy data set was done by mergin
 
 ## TIDY DATA SET
 The new feilds in the tidy data set a 79-vector subset of the 561-vector raw data fields. The tify subset deals with only the mean and standard deviation fields of the original raw data set which are then grouped and averaged by subject and activity. The fields in the tidy data set are obtained by prefixing avg_  to the corresponding raw field name e.g avg_tbodyAcc_mean_x is average of tbodyAcc_mean_x for that subject and activity (braces and minus signs are removed from the original field name to avoid parsing errors)
-The fields in the tidy data set are as follows
+The fields in the tidy data set are as follows. The tidy data frame is written using write.table() so it can be read back by read.table()
 
 * Subject                           
 * Activity                          
